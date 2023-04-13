@@ -1,0 +1,100 @@
+
+
+.header{
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-areas: "logo menu";
+
+    max-height: 63px;
+}
+
+.logo{
+    grid-area: logo;
+
+    display: grid;
+    grid-template-columns: 150px 40px 94px;
+    grid-template-areas: "img line text";
+}
+.logo_img{
+    grid-area: img;
+
+    width: 150px;
+    height: 62px;
+
+}
+.line{
+    grid-area: line;
+
+    margin-top: 37px;
+    width: 30px;
+    height: 0px;
+    border: 1px solid #E0E0E0;
+    transform: rotate(90deg);
+}
+.logo_text{
+    grid-area: text;
+    margin-top: 25px;
+    color: #333333;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: left;
+}
+
+.menu{
+    grid-area: menu;
+
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-areas: "navitems btn";
+}
+.nav{
+    grid-area: navitems;
+    margin-top: 30px;
+}
+.nav_item{
+    float: left;
+    width: 85px;
+    margin-left: 25px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+.nav_btn_container{
+    grid-area: btn;
+    
+}
+.nav_btn_container button{
+    margin-top: 13px;
+    float: right;
+    box-sizing: border-box;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #FBFF32, #FF961C) border-box;
+    border: 2px solid transparent;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 120%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_btn_container button:hover{
+    width: 172px;
+    height: 52px;
+    background:
+        linear-gradient(to right, #FBFF32, #FF961C) border-box,
+        linear-gradient(white, white) padding-box;
+}
+

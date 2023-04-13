@@ -1,0 +1,122 @@
+
+.window{
+    width: 400px;
+    height: 491px;
+    background-color: white;
+}
+.main_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #222222;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.inputs{
+    margin-top: 10px;
+    text-align: center;
+}
+.input{
+    padding: 20px;
+    width: 300px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #999999;
+}
+.div_btn{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn{
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(102.37deg, #FBFF32 0%, #FF961C 100%);
+    border: 0;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+.btn:hover {
+    width: 201px;
+    height: 62px;
+    background: linear-gradient(102.37deg, #FBFF32 100%, #FF961C 50%);
+}
+.btn_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 120%;
+    color: #333333;
+}
+
+.forget{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #FF4736;
+}
+.social{
+    text-align: center;
+    margin-top: 15px;
+}
+.social_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+}
+.social_icons{
+    margin-top: 10px;
+}
+.icon{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.orange_box{
+    cursor: pointer;
+    width: 400px;
+    height: 80px;
+    background: #FF4736;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.txt1{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.txt2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 950;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+
+.back{
+    height: 800px;
+    background-color: #ffffff;
+}
+.man{
+    float: left;
+    margin-top: 300px;
+}
+.main{
+    height: 800px;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    grid-template-areas: "head" "advtg";
+}
+
+.headtxt{
+    margin-bottom: 78px;
+    margin-top: 100px;
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fst_col sec_col";
+}
+.headtxt_txt{
+    grid-area: fst_col;
+}
+.head_adv{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #999999;
+}
+.head_line{
+    width: 40px;
+    height: 3px;
+    background: #FFDE32;
+    margin-top: 20px;
+}
+.head_why{
+    margin-top: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;  
+    color: #333333;
+}
+.headtxt_rating{
+    margin-top: 80px;
+    grid-area: sec_col;
+    text-align: right;
+}
+.rating_star{
+    margin-left: 4px;
+    height: 15.833333015441895px;
+    width: 16.666667938232422px;
+    left: 1.6666259765625px;
+    top: 1.66668701171875px;
+    border-radius: 0px;
+
+}
+.rate_num{
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+.rate_num_sub{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+}
+
+.advantgs{
+    column-count: 2;
+}

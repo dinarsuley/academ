@@ -1,0 +1,158 @@
+
+.regwindow{
+    width: 550px;
+    height: 660px;
+    background-color: white;
+}
+
+.orangeBox{
+    cursor: pointer;
+    padding-top: 25px;
+    margin-top: 30px;
+    width: 550px;
+    height: 80px;
+    bottom: -10px;
+    background: #FF4736;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+.txt1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.txt2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 950;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+
+.regText{
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    
+    color: #222222;
+    
+}
+
+.mbody{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "btns inputs"
+}
+
+.inputs{
+    grid-area: inputs;
+    text-align: center;
+}
+.input{
+    margin-top: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 15px;
+    background: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #999999;
+}
+
+.regAsBtns{
+    grid-area: btns;
+}
+.btnimg{
+    text-align: center;
+}
+.btnImgActive{
+    margin-top: 20px;
+}
+
+.btnImgInactive{
+    filter: saturate(15%);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btnimgtxt{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+
+.regBtn{
+    margin-top: 20px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(102.37deg, #FBFF32 0%, #FF961C 100%);
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #333333;
+}
+.regBtn:hover{
+    background: linear-gradient(102.37deg, #FBFF32 100%, #FF961C 0%);
+}
+
+.checkbox{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.social{
+    text-align: center;
+}
+.socialTxt{
+    float: left;
+    margin-left: 70px;
+    margin-top: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+}
+
+.icons{
+    margin-right: 30px;
+}
+
+.icon{
+    margin-top: 20px;
+    margin-left: 10px;
+}

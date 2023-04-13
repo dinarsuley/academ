@@ -1,0 +1,58 @@
+
+.adv{
+    margin-bottom: 38px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: "num txt";
+    width: 600px;
+}
+
+.num{
+    grid-area: num;
+}
+.num_back{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #FFDE32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num_front{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFDE32;
+}
+.num_txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.txt{
+    grid-area: txt;
+}
+.headtxt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    color: #333333;
+}
+.subtxt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+}
