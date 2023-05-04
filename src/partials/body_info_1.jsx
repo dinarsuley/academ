@@ -4,7 +4,18 @@ import "../App.css"
 import main_img from "../imgs/main-img1.svg";
 import { useState } from "react";
 
+const PopUpFeedback = () =>{
+    
+    return(
+        <div>
+            <h1>popup</h1>
+        </div>
+    )
+}
+
 const Body_info_1 = () =>{
+    const[popupActive, setPopupActive] = useState(false);
+
     const[modalExpertActive, setModalExpertActive] = useState(false);
     const[modalPushActive, setModalPushActive] = useState(false);
     return(
@@ -86,7 +97,7 @@ const Body_info_1 = () =>{
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
     );
 }

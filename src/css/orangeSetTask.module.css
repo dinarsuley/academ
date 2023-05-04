@@ -1,0 +1,67 @@
+
+.background{
+    height: 150px;
+    background: #FF4736;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-areas: "logo txt btn";
+}
+
+.logo{
+    grid-area: logo;
+    margin-top: 26px;
+}
+
+.text{
+    grid-area: txt;
+    margin-left: 40px;
+}
+.h2{
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+.h4{
+    margin-top: -10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+.btn{
+    margin-top: 45px;
+    grid-area: btn;
+    width: 230px;
+    height: 60px;
+
+    background-color: #FF4736;
+    border: 2px solid #FFDE32;
+    border-radius: 50px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FFDE32;
+    border: 2px solid #FFDE32;
+    color: #333333;
+}
