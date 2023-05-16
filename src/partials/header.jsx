@@ -6,7 +6,41 @@ import Autorisation from "./autorisation";
 import RegModal from "./regmodal";
 import { useState } from "react";
 
-const Header = ()=>{
+const Logo = () =>{
+    return(
+        <div className={header_styles.logo}>
+                    <a href="./../../public/index.html">
+                        <img src = {logo} alt="AcademWork logo" className={header_styles.logo_img} />
+                    </a>
+                    <div className={header_styles.line}></div>
+                    <span className={header_styles.logo_text}>
+                        Сервис помощи студентам
+                    </span>
+                </div>
+    )
+}
+
+const Navbar = (props) =>{
+    let arr = [];
+
+   for (let i = 1; i < props.arr.length; i++) {
+      arr.push(props.arr[i]);
+   }
+
+   let arrTag = arr.map(function(element, index) {
+      return <div className={header_styles.nav_item}>{element}</div>;
+   });
+
+    return(
+    <div className={header_styles.menu}>
+        <nav className={header_styles.nav} title="">
+            {arrTag}
+        </nav>
+    </div>
+    )
+}
+
+const Btn = (props) =>{
     const [modalAuthActive, setModalAuthActive] = useState(false);
     const [modalReghActive, setModalRegActive] = useState(false);
 
@@ -21,52 +55,36 @@ const Header = ()=>{
     }
 
     return(
-    <div>
-        <Modal active = {modalAuthActive} setActive={setModalAuthActive}>
-            <Autorisation onRegClick={changeRegModalState}/>
-        </Modal>
-        <Modal active = {modalReghActive} setActive={setModalRegActive}>
-            <RegModal onLoginClick={changeLogModalState}/>
-        </Modal>
-        <div className="container">
+        <div>
+            <Modal active = {modalAuthActive} setActive={setModalAuthActive}>
+                <Autorisation onRegClick={changeRegModalState}/>
+            </Modal>
+            <Modal active = {modalReghActive} setActive={setModalRegActive}>
+                <RegModal onLoginClick={changeLogModalState}/>
+            </Modal>
+            <div className={header_styles.btn_container}>
+                    <button  onClick={()=>setModalAuthActive(true)}>
+                        {props.txt}
+                    </button>
+            </div> 
+        </div>
+    )
+}
+
+const Header = ()=>{
+    const [isAuth, setAuth] = useState(false);
+
+    let navItemsNotAuth = ["Услуги", "О проекте", "Эксперты", "Отзывы", "FAQ", "Поддержка"];
+    let navItemsAuth = ["Главная", "Библиотека заказв", "Рейтинг исполнителей", "FAQ", "Помощь"];
+
+    return(
+    <div className={header_styles.background}>
+       
+        <div className={header_styles.container}>
             <header className={header_styles.header}>
-                <div className={header_styles.logo}>
-                    <a href="./../../public/index.html">
-                        <img src = {logo} alt="Academ Work logo" className={header_styles.logo_img} />
-                    </a>
-                    <div className={header_styles.line}></div>
-                    <span className={header_styles.logo_text}>
-                        Сервис помощи студентам
-                    </span>
-                </div>
-                <div className={header_styles.menu}>
-                    <nav className={header_styles.nav} title="">
-                        <div className={header_styles.nav_item}>
-                            Услуги
-                        </div>
-                        <div className={header_styles.nav_item}>
-                            О проекте
-                        </div>
-                        <div className={header_styles.nav_item}>
-                            Эксперты
-                        </div>
-                        <div className={header_styles.nav_item}>
-                            Отзывы
-                        </div>
-                        <div className={header_styles.nav_item}>
-                            FAQ
-                        </div>
-                        <div className={header_styles.nav_item}>
-                            Поддержка
-                        </div>
-                    </nav>
-                    <div className={header_styles.nav_btn_container}>
-                        <button  onClick={()=>setModalAuthActive(true)}>
-                            Личный кабинет
-                        </button>
-                    </div> 
-                </div>
-                
+                <Logo/>
+                <Navbar arr = {navItemsNotAuth} />
+                <Btn txt = "Личный кабинет"/>
             </header>
         </div>
         

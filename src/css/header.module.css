@@ -1,11 +1,31 @@
+.container{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
 
+}
+
+.container::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100vw;
+    height: 100px;
+    background: #F8F8F8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
 .header{
-    margin-top: 20px;
-
+    max-width: 1200px;
+    position: fixed;
+    padding: 15px;
     display: grid;
-    grid-template-columns: 2fr 7fr;
-    grid-template-areas: "logo menu";
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-areas: "logo menu btn";
 
     max-height: 63px;
 }
@@ -47,19 +67,14 @@
 
 .menu{
     grid-area: menu;
-
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-    grid-template-areas: "navitems btn";
 }
 .nav{
-    grid-area: navitems;
     margin-top: 30px;
 }
 .nav_item{
     float: left;
-    width: 85px;
-    margin-left: 25px;
+    width: max-content;
+    margin-left: 70px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -67,11 +82,13 @@
     font-size: 14px;
     line-height: 120%;
 }
-.nav_btn_container{
-    grid-area: btn;
-    
+.nav_item:hover{
+    cursor: pointer;
 }
-.nav_btn_container button{
+.btn_container{
+    grid-area: btn;
+}
+.btn_container button{
     margin-top: 13px;
     float: right;
     box-sizing: border-box;
@@ -90,7 +107,7 @@
     transition: all 0.3s ease;
 }
 
-.nav_btn_container button:hover{
+.btn_container button:hover{
     width: 172px;
     height: 52px;
     background:

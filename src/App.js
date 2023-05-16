@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './partials/header';
 //import Modal from "./partials/modal";
