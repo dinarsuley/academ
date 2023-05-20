@@ -1,8 +1,8 @@
-import style from "../css/lastOrders_main.module.css"
-import "../App.css"
-import lastOrders_img from "../imgs/lastOrders_img.svg"
-import Arrow from "../imgs/Arrow.svg"
-import alarm from "../imgs/icons/alarm.svg"
+import style from "../../css/lastOrders_main.module.css"
+import "../../App.css"
+import lastOrders_img from "../../imgs/lastOrders_img.svg"
+import Arrow from "../../imgs/Arrow.svg"
+import alarm from "../../imgs/icons/alarm.svg"
 
 const Order = (props) =>{
     return(
@@ -43,10 +43,22 @@ const LastOrders = () =>{
 
                 <div className={style.content_orders}>
                     <div className={style.orders_box}>
-                        <Order header = "Решить 3 задачи" description = "Решение задач, обоснование проектных решений, геодезия" cost = "5 000 руб." deadline = "Срок сдачи: 23 ноября, 21:00" />
-                        <Order header = "Сделать блок-схему" description = "Другое, программирование" cost = "3 250 руб." deadline = "Срок сдачи: 24 ноября, 11:00" />
-                        <Order header = "Следовать методическим рекомендациям" description = "Курсовая, экономика" cost = "25 000 руб." deadline = "Срок сдачи: 27 ноября, 07:00" />
-                        <Order header = "Решить задачи и ответить на вопросы" description = "Решение задач, гражданский процесс" cost = "7 700 руб." deadline = "Срок сдачи: 30 ноября, 23:00" />
+                        <Order  header = "Решить 3 задачи" 
+                                description = "Решение задач, обоснование проектных решений, геодезия" 
+                                cost = "5 000 руб." 
+                                deadline = "Срок сдачи: 23 ноября, 21:00" />
+                        <Order  header = "Сделать блок-схему" 
+                                description = "Другое, программирование" 
+                                cost = "3 250 руб." 
+                                deadline = "Срок сдачи: 24 ноября, 11:00" />
+                        <Order  header = "Следовать методическим рекомендациям" 
+                                description = "Курсовая, экономика" 
+                                cost = "25 000 руб." 
+                                deadline = "Срок сдачи: 27 ноября, 07:00" />
+                        <Order  header = "Решить задачи и ответить на вопросы" 
+                                description = "Решение задач, гражданский процесс" 
+                                cost = "7 700 руб." 
+                                deadline = "Срок сдачи: 30 ноября, 23:00" />
                     </div>
                     <div className={style.orders_scroller_container}>
                         <div className={style.arrowUp}>

@@ -1,0 +1,291 @@
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: "lft rght";
+    gap: 30px;
+}
+
+.name_h1{
+    grid-area: lft;
+    margin-top: 50px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.filtr_box{
+    margin-top: 130px;
+    grid-area: lft;
+    width: 300px;
+    height: 300px;
+    left: 360px;
+    top: 230px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.orders_container{
+    margin-top: 130px;
+    grid-area: rght;
+    float: left;
+}
+
+.order_container{
+    margin-bottom: 20px;
+    width: 850px;
+    height: 185px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "info actions";
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.btn_more_info{
+    grid-area: info;
+    width: 50px;
+    height: 185px;
+
+    border: 0;
+    background: #E7E7E7;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.btn_more_info:hover{
+    cursor: pointer;
+}
+
+.btn_more_info_txt{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.arrow{
+    margin-bottom: 10px;
+    transform: rotate(180deg);
+}
+
+.info_container{
+    grid-area: info;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.date{
+    float: left;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #999999;
+}
+
+.date.deadline{
+    margin-left: 5px;
+    color: #2AD846;
+}
+
+.calendar{
+    float: left;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.info{
+    width: 600px;
+    float: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #999999;
+}
+
+.info.header{
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #333333;
+}
+
+.info.characteristic{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.info.props{
+    float: none;
+    color: #333333;
+    display: inline;
+    margin-left: 5px;
+}
+
+.info.files{
+    margin-top: 15px;
+}
+
+.skrepka{
+    transform: translate(0, 2px);
+}
+
+.info.txt_file{
+    float: none;
+    color: #333333;
+    display: inline;
+    margin-left: 5px;
+    text-decoration-line: underline;
+}
+
+.actions_container{
+    grid-area: actions;
+    margin-top: 10px;
+}
+
+.otklik{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #333333;
+}
+
+.budget{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    
+
+    color: #333333;
+}
+
+.cost{
+    display: inline;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.refs{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #999999;
+}
+
+.refs:hover{
+    cursor: pointer;
+}
+
+.icon{
+    transform: translate(-5px, 5px);
+}
+.icon.hammer{
+    transform: translate(-5px, 2px);
+}
+
+.search_container{
+    grid-area: rght;
+    margin-top: 35px;
+    width: 850px;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.input{
+    margin-left: 20px;
+    width: 450px;
+    height: 60px;
+    border-radius: 5px;
+    float:left;
+    outline: 0;
+    box-shadow: none;
+    border:#FFFFFF;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #999999;
+}
+
+.search_line{
+    margin-top: 30px;
+    float: left;
+    width: 40px;
+    height: 0px;
+    
+    border: 1px solid #E0E0E0;
+    transform: rotate(90deg);
+}
+
+.context_menu{
+    margin-left: 30px;
+    margin-top: 18px;
+    float: left;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.context_menu:hover{
+    cursor: pointer;
+}
+
+.btn_search{
+    float: right;
+    width: 190px;
+    height: 60px;
+    background: #333333;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.btn_search:hover{
+    cursor: pointer;
+}
+
+.keydown{
+    z-index: -1;
+    transform: translate(5px, 5px);
+}
+

@@ -1,8 +1,8 @@
-import styles from "../css/autorisation.module.css";
-import vk_icon from "../imgs/icons/vk.svg";
-import fb_icon from "../imgs/icons/fb.svg";
-import google_icon from "../imgs/icons/google.svg";
-import yandex_icon from "../imgs/icons/yandex.svg";
+import styles from "../../css/autorisation.module.css";
+import vk_icon from "../../imgs/icons/vk.svg";
+import fb_icon from "../../imgs/icons/fb.svg";
+import google_icon from "../../imgs/icons/google.svg";
+import yandex_icon from "../../imgs/icons/yandex.svg";
 
 const Autorisation = ({onRegClick}) => {
     

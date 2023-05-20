@@ -1,7 +1,7 @@
-import Body_style from"../css/body_info_2.module.css";
-import "../App.css";
-import star from "../imgs/star.svg";
-import man from "../imgs/eblan.svg";
+import Body_style from"../../css/body_info_2.module.css";
+import "../../App.css";
+import star from "../../imgs/star.svg";
+import man from "../../imgs/eblan.svg";
 import Adv from "./advantage.jsx";
 
 const Body_info2 = () =>{

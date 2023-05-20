@@ -9,6 +9,7 @@
 .container::before{
     content: "";
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -20,6 +21,7 @@
 }
 
 .header{
+    z-index: 2;
     max-width: 1200px;
     position: fixed;
     padding: 15px;
@@ -74,11 +76,14 @@
 .nav_item{
     float: left;
     width: max-content;
-    margin-left: 70px;
+    margin-left: 30px;
 
+    text-decoration: none;
+
+    color: #333333;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 120%;
 }

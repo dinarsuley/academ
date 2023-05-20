@@ -1,4 +1,4 @@
-import style from "../css/advantage.module.css";
+import style from "../../css/advantage.module.css";
 
 const Adv = (props) =>{
     return(

@@ -1,7 +1,7 @@
-import Body_style from "../css/body_info_1.module.css"
-import Modal from "./modal.jsx";
-import "../App.css"
-import main_img from "../imgs/main-img1.svg";
+import Body_style from "../../css/body_info_1.module.css"
+import Modal from "../../partials/modal";
+import "../../App.css"
+import main_img from "../../imgs/main-img1.svg";
 import { useState } from "react";
 
 const PopUpFeedback = () =>{

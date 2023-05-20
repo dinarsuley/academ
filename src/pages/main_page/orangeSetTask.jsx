@@ -1,6 +1,7 @@
-import style from "../css/orangeSetTask.module.css"
-import "../App.css"
-import logoYellow from "../imgs/logoYellow.svg"
+import style from "../../css/orangeSetTask.module.css"
+import "../../App.css"
+import logoYellow from "../../imgs/logoYellow.svg"
+import footer from "../../imgs/FOOTER.jpg"
 
 const OrangeSetTask = () =>{
     return(
@@ -16,6 +17,7 @@ const OrangeSetTask = () =>{
                         Оставить заявку
                     </button>
                 </div>
+                <img className="delete" src={footer} alt="" />
             </div>
         </div>
     )
