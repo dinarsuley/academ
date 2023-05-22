@@ -3,6 +3,7 @@ import "../../App.css"
 import lastOrders_img from "../../imgs/lastOrders_img.svg"
 import Arrow from "../../imgs/Arrow.svg"
 import alarm from "../../imgs/icons/alarm.svg"
+import { useState, useEffect } from "react"
 
 const Order = (props) =>{
     return(
@@ -26,6 +27,32 @@ const Order = (props) =>{
 }
 
 const LastOrders = () =>{
+    const [last_orders, setLastOrders] = useState([]);
+
+    useEffect(() => {
+        fetch('http://127.0.0.1:8080/orders/get_lasts',{
+            method: "GET"
+        })
+           .then((res) => res.json())
+           .then((data) => {
+              console.log(data);
+              var orders = [];
+              var orders_raw = data['orders'];
+              for(var i = 0;i < orders_raw.length && i < 4; i++){
+                var date = new Date(orders_raw[i]['deadline']); 
+                orders.push(<Order  header = {orders_raw[i]['header']}
+                                    description = {orders_raw[i]['type_of_work']+", "+orders_raw[i]['subject']} 
+                                    cost = {orders_raw[i]['budget'] + " руб."}
+                                    deadline = {date.getHours()+":"+date.getMinutes()+"     "+date.getDay()+"."+date.getMonth()+"."+date.getFullYear()} />
+                            )
+              };
+              setLastOrders(orders);
+           })
+           .catch((err) => {
+              console.log(err.message);
+           });
+     }, []);
+
     return(
         <div className="container">
             <div className={style.content_main}>
@@ -43,22 +70,7 @@ const LastOrders = () =>{
 
                 <div className={style.content_orders}>
                     <div className={style.orders_box}>
-                        <Order  header = "Решить 3 задачи" 
-                                description = "Решение задач, обоснование проектных решений, геодезия" 
-                                cost = "5 000 руб." 
-                                deadline = "Срок сдачи: 23 ноября, 21:00" />
-                        <Order  header = "Сделать блок-схему" 
-                                description = "Другое, программирование" 
-                                cost = "3 250 руб." 
-                                deadline = "Срок сдачи: 24 ноября, 11:00" />
-                        <Order  header = "Следовать методическим рекомендациям" 
-                                description = "Курсовая, экономика" 
-                                cost = "25 000 руб." 
-                                deadline = "Срок сдачи: 27 ноября, 07:00" />
-                        <Order  header = "Решить задачи и ответить на вопросы" 
-                                description = "Решение задач, гражданский процесс" 
-                                cost = "7 700 руб." 
-                                deadline = "Срок сдачи: 30 ноября, 23:00" />
+                        {last_orders}
                     </div>
                     <div className={style.orders_scroller_container}>
                         <div className={style.arrowUp}>
