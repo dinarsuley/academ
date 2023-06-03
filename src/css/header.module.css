@@ -22,33 +22,33 @@
 
 .header{
     z-index: 2;
-    max-width: 1200px;
+    width: 1200px;
     position: fixed;
     padding: 15px;
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas: "logo menu btn";
+    display: flex;
 
     max-height: 63px;
 }
 
 .logo{
-    grid-area: logo;
-
-    display: grid;
-    grid-template-columns: 150px 40px 94px;
-    grid-template-areas: "img line text";
+    display: flex;
 }
-.logo_img{
-    grid-area: img;
 
+.logo_img{
     width: 150px;
     height: 62px;
-
 }
-.line{
-    grid-area: line;
 
+.logo_text_container{
+    display: flex;
+}
+.logo_text_container.auth{
+    display: none;
+    opacity: 0;
+}
+
+.line{
+    float: left;
     margin-top: 37px;
     width: 30px;
     height: 0px;
@@ -56,8 +56,8 @@
     transform: rotate(90deg);
 }
 .logo_text{
-    grid-area: text;
     margin-top: 25px;
+    width: 95px;
     color: #333333;
     font-family: 'Roboto';
     font-style: normal;
@@ -67,17 +67,21 @@
     text-align: left;
 }
 
-.menu{
-    grid-area: menu;
-}
 .nav{
-    margin-top: 30px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
 }
-.nav_item{
-    float: left;
-    width: max-content;
-    margin-left: 30px;
 
+.nav_item_container{
+    margin-left: 50px;
+}
+
+.nav_item_container.auth{
+    margin-left: 30px;
+}
+
+.nav_item{
     text-decoration: none;
 
     color: #333333;
@@ -89,15 +93,22 @@
 }
 .nav_item:hover{
     cursor: pointer;
+    color: #FF4736;
 }
+
+
+
 .btn_container{
-    grid-area: btn;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
 }
-.btn_container button{
+
+.btn_container_btn{
     margin-top: 13px;
     float: right;
     box-sizing: border-box;
-    width: 170px;
+    width: 160px;
     height: 50px;
     border-radius: 50px;
     background:
@@ -112,11 +123,67 @@
     transition: all 0.3s ease;
 }
 
-.btn_container button:hover{
-    width: 172px;
-    height: 52px;
+.btn_container_btn:hover{
     background:
         linear-gradient(to right, #FBFF32, #FF961C) border-box,
         linear-gradient(white, white) padding-box;
 }
+
+.mini_imgs{
+    display: flex;
+    float: left;
+    width: 200px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.mini_imgs img{
+    align-self: center;
+}
+
+.mini_imgs img:hover{
+    cursor: pointer;
+}
+
+.mini_imgs p{
+    margin-top: 25px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+
+    color: #333333;
+}
+
+.btns{
+    margin-left: auto;
+}
+
+.my_cabinet{
+    display: flex;
+    align-items: center;
+
+    width: 190px;
+    height: 50px;
+    border: 0;
+    background: #FFDE32;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #333333;
+}
+
+.my_cabinet img{
+    float: left;
+    margin-right: 10px;
+}
+
+
+
 

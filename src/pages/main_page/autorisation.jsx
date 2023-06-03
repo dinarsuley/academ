@@ -4,11 +4,12 @@ import fb_icon from "../../imgs/icons/fb.svg";
 import google_icon from "../../imgs/icons/google.svg";
 import yandex_icon from "../../imgs/icons/yandex.svg";
 
-const Autorisation = ({onRegClick}) => {
+const Autorisation = ({onRegClick, changeUserState}) => {
     
     const RegActive = (state) =>{
         onRegClick(state);
     }
+
     return (
         <div>
             <div className={styles.window}>
@@ -22,7 +23,7 @@ const Autorisation = ({onRegClick}) => {
                     <input type="password" placeholder="Пароль" className={styles.input} />
                 </div>
                 <div className={styles.div_btn}>
-                    <button className={styles.btn}>
+                    <button className={styles.btn} onClick={()=>changeUserState(true)}>
                         <span className={styles.btn_text}>Войти</span>
                     </button>
                 </div>

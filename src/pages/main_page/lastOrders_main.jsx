@@ -70,7 +70,22 @@ const LastOrders = () =>{
 
                 <div className={style.content_orders}>
                     <div className={style.orders_box}>
-                        {last_orders}
+                        <Order header = "Решить 3 задачи" 
+                               description = "Решение задач, обоснование проектных решений, геодезия" 
+                               cost = "5000 руб." 
+                               deadline = "Срок сдачи: 23 ноября, 21:00"/>
+                        <Order header = "Решить 3 задачи" 
+                               description = "Решение задач, обоснование проектных решений, геодезия" 
+                               cost = "5000 руб." 
+                               deadline = "Срок сдачи: 23 ноября, 21:00"/>
+                        <Order header = "Решить 3 задачи" 
+                               description = "Решение задач, обоснование проектных решений, геодезия" 
+                               cost = "5000 руб." 
+                               deadline = "Срок сдачи: 23 ноября, 21:00"/>
+                        <Order header = "Решить 3 задачи" 
+                               description = "Решение задач, обоснование проектных решений, геодезия" 
+                               cost = "5000 руб." 
+                               deadline = "Срок сдачи: 23 ноября, 21:00"/>
                     </div>
                     <div className={style.orders_scroller_container}>
                         <div className={style.arrowUp}>
